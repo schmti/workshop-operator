@@ -1,4 +1,4 @@
-# How to create a "Hello World"-Operator on OpenShift 4.5
+# How to create an Operator on OpenShift 4.5
 
 This introduction contains the installation and configuration such as an example how to develop OpenShift-Operators using the
 operator-sdk with Ansible.
@@ -19,7 +19,7 @@ Install operator-sdk:
 /usr/local/bin:$ RELEASE_VERSION=v1.1.0
 /usr/local/bin:$ sudo curl -OJL https://github.com/operator-framework/operator-sdk/releases/download/${RELEASE_VERSION}/operator-sdk-${RELEASE_VERSION}-x86_64-linux-gnu
 /usr/local/bin:$ sudo chmod +x operator-sdk-${RELEASE_VERSION}-x86_64-linux-gnu
-/usr/local/bin:$ sudo mv operator-sdk-v1.1.0-x86_64-linux-gnu operator-sdk
+/usr/local/bin:$ sudo mv operator-sdk-v0.17.0-x86_64-linux-gnu operator-sdk
 ~:$ operator-sdk version
 ```
 
