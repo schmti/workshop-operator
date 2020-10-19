@@ -17,7 +17,7 @@ spec:
       containers:
         - name: workshop-operator
           # Replace this with the built image name
-          image: "REPLACE_IMAGE"
+          image: "quay.io/schmti/workshop-operator:latest"
           imagePullPolicy: "Always"
           volumeMounts:
           - mountPath: /tmp/ansible-operator/runner
@@ -27,11 +27,11 @@ spec:
               valueFrom:
                 fieldRef:
                   fieldPath: metadata.namespace
-            - name: Workshop-Operator-POD
+            - name: POD_NAME
               valueFrom:
                 fieldRef:
                   fieldPath: metadata.name
-            - name: Workshop-Operator
+            - name: OPERATOR_NAME
               value: "workshop-operator"
             - name: ANSIBLE_GATHERING
               value: explicit
