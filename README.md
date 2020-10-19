@@ -16,7 +16,7 @@ Install operator-sdk:
 
 ```bash
 ~:$ cd /usr/local/bin
-/usr/local/bin:$ RELEASE_VERSION=v1.1.0
+/usr/local/bin:$ RELEASE_VERSION=v0.17.0
 /usr/local/bin:$ sudo curl -OJL https://github.com/operator-framework/operator-sdk/releases/download/${RELEASE_VERSION}/operator-sdk-${RELEASE_VERSION}-x86_64-linux-gnu
 /usr/local/bin:$ sudo chmod +x operator-sdk-${RELEASE_VERSION}-x86_64-linux-gnu
 /usr/local/bin:$ sudo mv operator-sdk-v0.17.0-x86_64-linux-gnu operator-sdk
@@ -30,5 +30,6 @@ Install operator-sdk:
 ~:$ operator-sdk new workshop-operator \
 --api-version=workshops.operator.redhatgov.io/v1 \
 --kind=Workshop \
---type=ansible
+--type=ansible \
+--cluster-scope
 ```
